@@ -1,0 +1,101 @@
+<nav>
+    <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+        <a [routerLink]="['/index']"><img src="../../../assets/logo.png" alt="logo"></a>
+    </div>
+  </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    <div class="nav-links">
+        <ul>
+            <li>
+                <button class="spacing" mat-stroked-button routerLink="about">About Us</button>
+            </li>
+            <li>
+                <button class="spacing" mat-stroked-button routerLink="contact">Contact Us</button>
+            </li>
+            <!-- <li>
+                <button mat-stroked-button class="spacing" style="margin-left: 8px;" [routerLink]="['/events']">Events</button>
+            </li> -->
+            <li>
+                <button mat-stroked-button class="spacing" [matMenuTriggerFor]="movieMenu">Movies <i class="material-icons">arrow_drop_down</i></button>
+                <mat-menu class="drop" #movieMenu="matMenu">
+                    <button mat-menu-item [routerLink]="['/all-products']">All products</button>
+                    <button mat-menu-item [routerLink]="['/all-products/upcoming']">Agri Products</button>
+                    <button mat-menu-item [routerLink]="['/all-products/now-showing']">Other Brands</button>
+                </mat-menu>
+            </li>
+            <li>
+                <button class="spacing" mat-stroked-button [routerLink]="['/offers']">Offers</button>
+            </li>
+            <li *ngIf="user == ''">
+                <button class="spacing"  mat-stroked-button (click)="signIn()">Sign In</button>
+            </li>
+            <li *ngIf="user == ''">
+                <button class="spacing"  mat-stroked-button (click)="signupDialog()">Sign Up</button>
+            </li>
+            <li *ngIf="user != ''">
+                <button class="spacing"  mat-stroked-button [matMenuTriggerFor]="menu"><mat-icon>account_circle</mat-icon>{{user}}</button>
+            </li>
+            <li>
+                <button class="spacing" mat-stroked-button (click)="trackingCode()">Tracking Order</button>
+            </li>
+            <li>
+                <button class="spacing" mat-stroked-button routerLink="create-event">Create your request</button>
+            </li>
+        </ul>
+    </div>
+    <div class="row desktop">
+        <div class="col-5">
+            <div class="row">
+                <div class="col border-bottom">
+                    <img src="../../../assets/logo-small.ico" [routerLink]="['/index']">
+                    <button class="spacing" mat-button routerLink="about">About Us</button>
+                    <button class="spacing" mat-button routerLink="contact">Contact Us</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- <button mat-stroked-button class="spacing" style="margin-left: 8px;" [routerLink]="['/events']">Events</button> -->
+                    <button mat-stroked-button class="spacing" [matMenuTriggerFor]="movieMenu">Products <i class="material-icons">arrow_drop_down</i></button>
+                    <mat-menu class="drop" #movieMenu="matMenu">
+                        <button mat-menu-item [routerLink]="['/all-products']">All Products</button>
+                        <button mat-menu-item [routerLink]="['/all-products/upcoming']">Agri Products</button>
+                        <button mat-menu-item [routerLink]="['/all-products/now-showing']">Other Brands</button>
+                    </mat-menu>
+                    <button class="spacing" mat-stroked-button [routerLink]="['/offers']">Offers</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 img">
+            <a [routerLink]="['/index']"><img src="../../../assets/logo.png" alt="logo"></a>
+        </div>
+        <div class="col-5">
+            <div class="row border-bottom">
+                <div class="col right">
+                    <button class="spacing" *ngIf="user == ''" mat-button (click)="signIn()">Sign In</button>
+                    <button class="spacing" *ngIf="user == ''" mat-button (click)="signupDialog()">Sign Up</button>
+                    <button class="spacing" *ngIf="user != ''" mat-button [matMenuTriggerFor]="menu"><mat-icon>account_circle</mat-icon>{{user}}</button>
+                    <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="logout()">Sign out</button>
+                    </mat-menu>
+                    <button class="spacing" mat-button (click)="location()" style="width: 17% !important; font-size: smaller;">
+                        {{city}} <mat-icon> location_on</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col right">
+                    <button class="spacing" mat-stroked-button (click)="trackingCode()">Tracking Order</button>
+                    <button class="spacing" mat-stroked-button routerLink="create-event">Create your request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

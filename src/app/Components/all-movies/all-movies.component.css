@@ -1,0 +1,45 @@
+ngb-carousel{
+    margin-top: 7%;
+}
+ngb-carousel img{
+    -webkit-filter: brightness(70%);
+    filter:brightness(70%);
+    height: calc(100vh - 150px);
+}
+.picsum-img-wrapper img{
+    width: 100%;
+}
+.bg{
+    margin-top: -5%;
+    background: url(../../../assets/texture-bw.png);
+    margin-bottom: 0;
+}
+mat-grid-tile img{
+    height: 80%;
+    width: 100%;
+    padding: 0;
+}
+mat-grid-tile h3{
+    text-align: center;
+}
+.container h1{
+    padding-top: 7%;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.example-full-width {
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+table button{
+    position: relative;
+    left: 30%;
+}
+carousel{
+    z-index: 0;
+}

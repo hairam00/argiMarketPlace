@@ -1,0 +1,84 @@
+<ngb-carousel>
+    <ng-template ngbSlide >
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/slider1.jfif">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/slider2.jfif">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/Slider3.png">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <!-- all movies -->
+  <div class="bg">
+    <div class="container">
+      <div *ngIf="!hideFilter">
+        <h1>FILTER</h1>
+      <hr>
+      <form class="example-form">
+        <table>
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-icon matPrefix>category</mat-icon>
+                        <mat-label>Select Filter</mat-label>
+                        <mat-select #category name="category" id="category" (selectionChange)="getMovieCategory(category.value)" [(value)]="selected">
+                          <mat-option value="All">All</mat-option>
+                          <mat-option value="Upcoming">Agri Products</mat-option>
+                          <mat-option value="Now">Other Brands</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </td>
+                <td>
+                  <button mat-raised-button class="primary" (click)="clear()">Clear <mat-icon> clear_all</mat-icon></button>
+                </td>
+            </tr>
+        </table>    
+    </form>
+      </div>
+        <h1>Products</h1>
+        <hr>
+        <mat-grid-list cols="4" rowHeight="2:3">
+            <mat-grid-tile *ngFor="let item of movies">
+                <div class="container mat-grid-tile" [routerLink]="['/movies', item.id ,item.name]">
+                    <img src="../../../assets/{{item.image}}">
+                    <h3>{{item.name}}</h3>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+  </div>
+  <!-- now showing -->
+  <div class="container">
+      <h1>HOT PRODUCTS</h1>
+      <hr>
+      <carousel>
+        <div class="carousel-cell">
+            <img src="../../../assets/ROUNDUP-HERBICIDE.jpg" id="1" name="ROUNDUP HERBICIDE" #movie1 (click)="reload(movie1.id,movie1.name)">
+        </div>
+        <div class="carousel-cell">
+            <img src="../../../assets/Sempra.jpg" id="2" name="Sempra" #movie2 (click)="reload(movie2.id,movie2.name)">
+        </div>
+        <div class="carousel-cell">
+            <img src="../../../assets/GRAMOXONE-HERBICIDE.jpg" id="3" name="GRAMOXONE-HERBICIDE" #movie3 (click)="reload(movie3.id,movie3.name)">
+        </div>
+        <div class="carousel-cell">
+            <img src="../../../assets/EXCEL-MERA-71-HERBICIDE.jpg" id="4" name="EXCEL-MERA-71-HERBICIDE" #movie4 (click)="reload(movie4.id,movie4.name)">
+        </div>
+        <div class="carousel-cell">
+            <img src="../../../assets/UPL-SAATHI-HERBICIDE.jpg" id="5" name="UPL-SAATHI-HERBICIDE" #movie5 (click)="reload(movie5.id,movie5.name)">
+        </div>
+        <div class="carousel-cell">
+            <img src="../../../assets/AGIL-HERBICIDE.jpg" id="6" name="AGIL-HERBICIDE" #movie6 (click)="reload(movie6.id,movie6.name)">
+        </div>
+        <div class="carousel-cell">
+            <img src="../../../assets/NOMINEE-GOLD-HERBICIDE.jpg" id="7" name="NOMINEE-GOLD-HERBICIDE" #movie7 (click)="reload(movie7.id,movie7.name)">
+        </div>        
+    </carousel>
+  </div>

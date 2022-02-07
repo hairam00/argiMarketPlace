@@ -1,0 +1,81 @@
+<ngb-carousel>
+    <ng-template ngbSlide >
+      <div class="picsum-img-wrapper" [routerLink]="['/events', '2' ,'CAMP-BESTIVAL-2021']">
+        <img src="../../../assets/CAMPBESTIVAL.jpg">
+      </div>
+      <div class="carousel-caption">
+        <h3>CAMP BESTIVAL 2021</h3>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper" [routerLink]="['/events', '3' ,'FESTIVAL-OF-LIGHTS']">
+        <img src="../../../assets/FESTIVALOFLIGHTS.jpg">
+      </div>
+      <div class="carousel-caption">
+        <h3>FESTIVAL OF LIGHTS</h3>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper" [routerLink]="['/events', '4' ,'DRAAIMOLEN-FESTIVAL-2021']">
+        <img src="../../../assets/DRAAIMOLENFESTIVAL.jpg">
+      </div>
+      <div class="carousel-caption">
+        <h3>DRAAIMOLEN FESTIVAL 2021</h3>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+<div class="bg">
+    <div class="container">
+        <h1>Filter Events</h1>
+        <hr>
+        <form class="example-form">
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Select Category</mat-label>
+                            <mat-icon matPrefix>category</mat-icon>
+                            <mat-select  #category name="category" id="category" (selectionChange)="searchCategory(category.value)" [(value)]="selectCategory">
+                              <mat-option value="All">All</mat-option>
+                              <mat-option value="FESTIVAL">FESTIVAL</mat-option>
+                              <mat-option value="SPORTS">SPORTS</mat-option>
+                              <mat-option value="EXHIBITION">EXHIBITION</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                          <mat-icon matPrefix>location_city</mat-icon>
+                            <mat-label>Select City</mat-label>
+                            <mat-select  #city name="city" id="city" (selectionChange)="searchCity(city.value)" [(value)]="selectCity">
+                              <mat-option value="All">All</mat-option>
+                              <mat-option value="Lahore">Lahore</mat-option>
+                              <mat-option value="Islamabad">Islamabad</mat-option>
+                              <mat-option value="Karachi">Karachi</mat-option>
+                              <mat-option value="Multan">Multan</mat-option>
+                              <mat-option value="Peshawar">Peshawar</mat-option>
+                              <mat-option value="Faisalabad">Faisalabad</mat-option>
+                              <mat-option value="Rawalpindi">Rawalpindi</mat-option>
+                              <mat-option value="Murree">Murree</mat-option>
+                              <mat-option value="Kashnir">Kashmir</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </td>
+                    <td>
+                        <button mat-raised-button color="warn" (click)="clear()">Clear <mat-icon> clear_all</mat-icon></button>  
+                    </td>
+                </tr>
+            </table>    
+        </form>    
+        <div class="cards" >
+            <div class="card" *ngFor="let item of data">
+                <img src="../../../assets/{{item.image}}">
+                <div class="data">
+                    <p>{{item.date}} | {{item.city}}</p>
+                    <h3>{{item.name}}</h3>
+                    <button mat-raised-button color="warn" [routerLink]="['/events', item.id, item.name]" >VIEW DETAILS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

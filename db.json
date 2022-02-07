@@ -1,0 +1,455 @@
+{
+  "newsletter": [
+    {
+      "id": 1,
+      "email": "hairamirshad@gmail.com",
+      "city": "Lahore"
+    },
+    {
+      "id": 2,
+      "email": "test@testing.com",
+      "city": "Multan"
+    }
+  ],
+  "whatsapp": [
+    {
+      "id": 1,
+      "number": "4277187",
+      "city": "Lahore",
+      "movies": true,
+      "events": false,
+      "blogs": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Hairam Irshad",
+      "email": "hairamirshad@gmail.com",
+      "code": "0301",
+      "number": "4277187",
+      "password": "hairam123"
+    },
+    {
+      "id": 2,
+      "name": "Dr.Hairam",
+      "email": "hairamirshad@gmail.com",
+      "code": "0304",
+      "number": "4277187",
+      "password": "qwerty"
+    },
+    {
+      "id": 3,
+      "name": "admin",
+      "email": "admin@admin.com",
+      "code": "0302",
+      "number": "3698745",
+      "password": "admin"
+    },
+    {
+      "id": 4,
+      "name": "admin",
+      "email": "admin@admin.com",
+      "code": "0302",
+      "number": "3698745",
+      "password": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "ROUNDUP HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1850",
+      "release": "Now",
+      "image": "ROUNDUP-HERBICIDE.jpg",
+      "slot1": "250 ML",
+      "slot2": "500 ML",
+      "slot3": "1 LTR",
+      "slot4": "5 LTR",
+      "slot5": "10 LTR",
+      "slot6": "20 LTR"
+    },
+    {
+      "id": 2,
+      "name": "Sempra",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1250",
+      "release": "Upcoming",
+      "image": "Sempra.jpg",
+      "slot1": "3.6 GM",
+      "slot2": "18 GM",
+      "slot3": "36 GM",
+      "slot4": "180 GM",
+      "slot5": "360 GM",
+      "slot6": "720 GM"
+    },
+    {
+      "id": 3,
+      "name": "GRAMOXONE HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1100",
+      "release": "Upcoming",
+      "image": "GRAMOXONE-HERBICIDE.jpg",
+      "slot1": "1 LTR",
+      "slot2": "3 LTR",
+      "slot3": "5 LTR",
+      "slot4": "10 LTR",
+      "slot5": "15 LTR",
+      "slot6": "20 LTR"
+    },
+    {
+      "id": 4,
+      "name": "EXCEL MERA 71 HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1400",
+      "release": "Now",
+      "image": "EXCEL-MERA-71-HERBICIDE.jpg",
+      "slot1": "200 GM",
+      "slot2": "500 GM",
+      "slot3": "1 Kg",
+      "slot4": "5 KG",
+      "slot5": "10 KG",
+      "slot6": "20 KG"
+    },
+    {
+      "id": 5,
+      "name": "UPL SAATHI HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1700",
+      "release": "Upcoming",
+      "image": "UPL-SAATHI-HERBICIDE.jpg",
+      "slot1": "200 GM",
+      "slot2": "500 GM",
+      "slot3": "1 Kg",
+      "slot4": "5 KG",
+      "slot5": "10 KG",
+      "slot6": "20 KG"
+    },
+    {
+      "id": 6,
+      "name": "AGIL SYSTEMIC HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1300",
+      "release": "Now",
+      "image": "AGIL-HERBICIDE.jpg",
+      "slot1": "300 ML",
+      "slot2": "500 ML",
+      "slot3": "1 LTR",
+      "slot4": "5 LTR",
+      "slot5": "10 LTR",
+      "slot6": "20 LTR"
+    },
+    {
+      "id": 7,
+      "name": "NOMINEE GOLD HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1500",
+      "release": "Upcoming",
+      "image": "NOMINEE-GOLD-HERBICIDE.jpg",
+      "slot1": "300 ML",
+      "slot2": "500 ML",
+      "slot3": "1 LTR",
+      "slot4": "5 LTR",
+      "slot5": "10 LTR",
+      "slot6": "20 LTR"
+    },
+    {
+      "id": 8,
+      "name": "PREET HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "3500",
+      "release": "Now",
+      "image": "Tata_Rallis_Preet_Herbicide.jpg",
+      "slot1": "300 ML",
+      "slot2": "500 ML",
+      "slot3": "1 LTR",
+      "slot4": "5 LTR",
+      "slot5": "10 LTR",
+      "slot6": "20 LTR"
+    },
+    {
+      "id": 9,
+      "name": "LAUDIS HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "2500",
+      "release": "Now",
+      "image": "Laudis-Packshot.jpg",
+      "slot1": "300 ML",
+      "slot2": "500 ML",
+      "slot3": "1 LTR",
+      "slot4": "5 LTR",
+      "slot5": "10 LTR",
+      "slot6": "20 LTR"
+    },
+    {
+      "id": 10,
+      "name": "SUMI MAX HERBICIDE",
+      "location": "Agri Product",
+      "category": "VERIFIED",
+      "summary": "A mythic and emotionally charged hero's journey, DUNE tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.—Warner Bros.",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "date": "1500",
+      "release": "Now",
+      "image": "imgpsh_fullsize_anim_6.jpg",
+      "slot1": "300 ML",
+      "slot2": "500 ML",
+      "slot3": "1 LTR",
+      "slot4": "5 LTR",
+      "slot5": "10 LTR",
+      "slot6": "20 LTR"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "firstname": "Hairam",
+      "lastname": "Irshad",
+      "email": "hairamirshad@gmail.com",
+      "code": "0300",
+      "number": "4277187",
+      "subject": "Feedback",
+      "message": "Its really awesome"
+    },
+    {
+      "id": 2,
+      "firstname": "Hairam",
+      "lastname": "Irshad",
+      "email": "hairamirshad@gmail.com",
+      "code": "0301",
+      "number": "4277187",
+      "subject": "Feedback",
+      "message": "i am facing problem regarding order tracking"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Test Event",
+      "date": "July 08, 2021 - July 30, 2021",
+      "location": "Lahore",
+      "category": "SPORTS",
+      "image": "test-event.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": ""
+    },
+    {
+      "id": 2,
+      "name": "CAMP BESTIVAL 2021",
+      "date": "July 29, 2021",
+      "location": "Multan",
+      "category": "FESTIVAL",
+      "image": "CAMPBESTIVAL.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": ""
+    },
+    {
+      "id": 3,
+      "name": "FESTIVAL OF LIGHTS",
+      "date": "September 04, 2021",
+      "location": "Karachi",
+      "category": "FESTIVAL",
+      "image": "FESTIVALOFLIGHTS.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": "Now"
+    },
+    {
+      "id": 4,
+      "name": "DRAAIMOLEN FESTIVAL 2021",
+      "date": "September 11, 2021",
+      "location": "Karachi",
+      "category": "FESTIVAL",
+      "image": "DRAAIMOLENFESTIVAL.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": "Now"
+    },
+    {
+      "id": 5,
+      "name": "2ND PNDS INTERNATIONAL CONFERENCE2021",
+      "date": "November 04, 2021",
+      "location": "Karachi",
+      "category": "EXHIBITION",
+      "image": "2NDPNDSINTERNATIONAL.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": "Now"
+    },
+    {
+      "id": 6,
+      "name": "THE KARACHI ART 'N' CRAFT WINTER GALA",
+      "date": "November 06, 2021",
+      "location": "Karachi",
+      "category": "EXHIBITION",
+      "image": "THEKARACHIART.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": "Now"
+    },
+    {
+      "id": 7,
+      "name": "THE INDIE ART AND CRAFT SHOW ISLAMABAD",
+      "date": "December 18, 2021",
+      "location": "Islamabad",
+      "category": "FESTIVAL",
+      "image": "THEINDIEART.jpg",
+      "summary": "",
+      "user_review": "",
+      "critic": "",
+      "videos": "",
+      "release": "Now"
+    }
+  ],
+  "bookings": [
+    {
+      "booking_date": "1/28/2022",
+      "seats": "2",
+      "ticket_id": 9,
+      "timings": "3.6 GM",
+      "booking_type": "movies",
+      "id": 7
+    },
+    {
+      "booking_date": "1/20/2022",
+      "seats": "5",
+      "ticket_id": 2,
+      "timings": "18 GM",
+      "booking_type": "movies",
+      "id": 8
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "valid_till": "27, August 2021",
+      "applicable": "Ring of Pakistan",
+      "image": "offer1.jfif",
+      "validation": "current"
+    },
+    {
+      "id": 2,
+      "valid_till": "02, January 2019",
+      "applicable": "Ring of Pakistan",
+      "image": "offer2.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 3,
+      "valid_till": "02, January 2019",
+      "applicable": "Ring of Pakistan",
+      "image": "offer3.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 4,
+      "valid_till": "07, December 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer3.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 5,
+      "valid_till": "17, November 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer2.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 6,
+      "valid_till": "09, December 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer3.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 7,
+      "valid_till": "09, December 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer2.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 8,
+      "valid_till": "09, December 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer3.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 9,
+      "valid_till": "09, December 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer2.jfif",
+      "validation": "previous"
+    },
+    {
+      "id": 10,
+      "valid_till": "09, December 2018",
+      "applicable": "Ring of Pakistan",
+      "image": "offer3.jfif",
+      "validation": "previous"
+    }
+  ]
+}

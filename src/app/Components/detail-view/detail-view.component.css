@@ -1,0 +1,65 @@
+.cover{
+    width: 100%;
+    height: 400px;
+    background-repeat: none;
+    background-size: cover;
+}
+.cover .play{
+    font-size: 100pt;
+    color: white;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.cover .play:hover{
+    cursor: pointer;
+}
+.dflex{
+    display: flex;
+    justify-content: space-around;
+}
+.imgbar, .tabs{
+    position: relative;
+    margin-top: -10%;
+}
+.imgbar img{
+    width: 200px;
+    height: 300px;
+    margin: 5% 0;
+}
+.tabs{
+    position: relative;
+    margin-top: -8%;
+    margin-left: -12%;
+}
+span{
+    border: solid 1px white;
+    margin: 2%;
+}
+span:hover{
+    color: #98c67e !important;
+    transition: ease-in-out 0.5s;
+}
+.tabs p, .tabs h1,.tabs span{
+    color: white;
+}
+mat-tab-group{
+    margin-top: 5%;
+    width: 800px;
+}
+.containers{
+    padding: 1%;
+}
+.bg{
+    margin-top: 15%;
+    background-color: #dfdfdf;
+    padding-bottom: 1%;
+    padding-top: 0.1%;
+}
+.dflex button{
+    width: 75%;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+carousel{
+    z-index: 0;
+}

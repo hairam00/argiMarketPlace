@@ -1,0 +1,24 @@
+.bookitnow{
+    background-image: url(../../../assets/about-background.jpg);
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 0;
+    width: 100%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+.info mat-icon{
+    color: #98c67e;
+    font-size: 10em;
+    margin-left: -40%;
+}
+.spacebar{
+    border: solid 2px #98c67e;
+    width: 80px;
+    display: inline-block;
+}

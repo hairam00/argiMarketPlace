@@ -1,0 +1,139 @@
+<!-- carousel -->
+<div class="container">
+    <ngb-carousel>
+        <ng-template ngbSlide >
+          <div class="picsum-img-wrapper">
+            <img class="slide" src="../../../assets/slider1.jfif">
+          </div>
+          <div class="carousel-caption">
+            <h3>The Conjuring: The devil made me do it</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper" >
+            <img class="slide" src="../../../assets/slider2.jfif">
+          </div>
+          <div class="carousel-caption">
+            <h3>A QUITE PLACE PART 2</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper" >
+            <img class="slide" src="../../../assets/Slider3.png">
+          </div>
+          <div class="carousel-caption">
+            <h3>BLACK WIDOW</h3>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+</div>
+<!-- POPULAR PRODUCTS -->
+<div class="container">
+  <div class="featured-header space-between">
+    <h1>POPULAR PRODUCTS</h1>
+    <button class="raise primary" mat-flat-button [routerLink]="['/all-products']" >View All Products</button>
+  </div> <br>
+  <div class="cards">
+  <div class="view view-first" *ngFor="let item of data" [routerLink]="['/movies', item.id ,item.name]">
+    <img src="../assets/{{item?.image}}">
+    <div class="mask">
+      <h2>{{item?.name}}</h2>
+      <p>{{item?.category}}</p>
+      <button mat-raised-button class="primary">Read More</button>
+    </div>
+  </div>
+  </div>
+</div> 
+<!-- Featured events -->
+<!-- <section class="featured">
+  <div class="featured container">
+    <div class="featured-header space-between">
+      <h1>FEATURED EVENTS</h1>
+      <button class="raise" mat-flat-button class="primary" [routerLink]="['/events']">SEE ALL EVENTS</button>
+    </div>
+    <div class="cards" *ngIf="eventData">
+      <div class="event-card">
+        <img src="../../../assets/{{eventData[0]?.image}}" alt="test-event">
+        <p>{{eventData[0].date}} | {{eventData[0].city}}</p>
+        <h5>{{eventData[0].name}}</h5>
+        <button class="raise" mat-flat-button color="warn" [routerLink]="['/events', eventData[0].id , eventData[0].name]">Read more</button>
+      </div>
+      <div class="event-card">
+        <img src="../../../assets/{{eventData[1]?.image}}" alt="indie">
+        <p>{{eventData[1].date}} | {{eventData[1].city}}</p>
+        <h6>{{eventData[1].name}}</h6>
+        <button class="raise" mat-flat-button color="warn" [routerLink]="['/events', eventData[1].id , eventData[1].name]">Read more</button>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- partners -->
+<section class="partners">
+  <div class="partners-header container">
+    <h1>OUR PARTNER ORGANIZERS </h1>
+  </div>
+  <div class="container">
+    <mat-grid-list cols="6" rowHeight="2:2">
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/Salt Arts.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/olomopolo.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/saiyah.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/alliance.png">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/napa.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/festival.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/port.jpg" >
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/shaan.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/school.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/solis.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/initiative.jpg">
+      </mat-grid-tile>
+      <mat-grid-tile class="img-hover-zoom">
+        <img src="../../../assets/coke.jpg">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</section>
+<!-- bookitnow -->
+<section class="bookitnow container">
+  <div class="featured-header">
+    <h1>AGRIMARKETPLACE.PK</h1>
+  </div>
+  <br>
+  <div class="cards">
+    <div class="left">
+      <h4>WHAT IS AGRIMARKETPLACE.PK?</h4>
+      <p>We , agrimarketplace.pk , are a team to provide you with your One Stop Entertainment Solution.</p>
+      <button mat-raised-button class="primary" [routerLink]="['/about']">Read More</button>
+    </div>
+    <div class="center">
+      <h4>WHAT WE DO ?</h4>
+      <p>Online portal that has made buying tickets online easy with simple steps without unnecessary frills.</p>
+      <button mat-raised-button class="primary" [routerLink]="['/about']">Read More</button>
+    </div>
+    <div class="right">
+      <h4>AGRIMARKETPLACE.PK OFFERS ?</h4>
+      <p>Event calendar of events happening all over Pakistan. include all categories.</p>
+      <button mat-raised-button class="primary" [routerLink]="['/offers']">Read More</button>
+    </div>
+  </div>
+</section>

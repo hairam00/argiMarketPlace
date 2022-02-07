@@ -1,0 +1,59 @@
+.row{
+    width: 100%;
+}
+.whats{
+    background-color: #d9e8eb;
+    padding: 5% 1% 0% 1%;
+    margin-right: -1.1%;
+}
+.whats mat-checkbox{
+    padding: 1% 3%;
+}
+.news{
+    background-color: #f0f0f2;
+    padding: 5% 1% 0% 2%;
+}
+.news p{
+    padding-bottom: 5%;
+}
+footer{
+    background-color: #282828;
+    color: #ccc;
+    padding-top: 1%;
+}
+.dflex{
+    display: flex;
+    justify-content: space-around;
+}
+.col a{
+    display: block;
+}
+.col img{
+    display: block;
+    height: 10%;
+    margin-bottom: 5%;
+}
+.col a:hover{
+    color: #98c67e;
+    transition: ease-in-out 0.5s;
+}
+.col h4{
+    color: #eaeaec;
+}
+.copyright span{
+    color: #98c67e;
+}
+hr{
+    border: solid 1px #333;
+}
+.socials i:hover {
+    color: #98c67e;
+    transition: ease-in-out 0.5s;
+}
+button{
+    padding: 15% !important;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
