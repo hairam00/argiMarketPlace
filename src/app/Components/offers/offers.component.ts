@@ -11,7 +11,7 @@ export class OffersComponent implements OnInit {
 previousOffer: any;
 currentOffer:any;
   constructor(private rest: RestService, private title: Title) {
-    this.title.setTitle('Bookitnow - Offers')
+    this.title.setTitle('agriMarketPlace - Offers')
    }
 
   ngOnInit(): void {

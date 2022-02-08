@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class NotfoundComponent implements OnInit {
 
   constructor(private title: Title ) {
-    this.title.setTitle("Bookitnow - Page not found")
+    this.title.setTitle("agriMarketPlace - Page not found")
    }
 
   ngOnInit(): void {

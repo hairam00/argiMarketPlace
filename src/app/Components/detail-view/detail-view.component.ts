@@ -70,7 +70,7 @@ export class DetailViewComponent implements OnInit {
       if(this.data == 'undefined' || this.data == undefined){
         this.router.navigateByUrl('not-found')
       }
-      this.pageTitle = "Bookitnow - " + this.data.name;
+      this.pageTitle = "agriMarketPlace - " + this.data.name;
       this.title.setTitle(this.pageTitle as string)
       if(this.data.summary == '' ){
         this.data.summary = 'No synopsis found for this event yet.';

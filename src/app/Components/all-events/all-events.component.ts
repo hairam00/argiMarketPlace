@@ -16,7 +16,7 @@ selectCity: string = '';
 selectCategory: string = '';
 
   constructor(private restService: RestService, private _snackBar: MatSnackBar, private title: Title) {
-    this.title.setTitle('Bookitnow - Events')
+    this.title.setTitle('agriMarketPlace - Events')
    }
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action);
