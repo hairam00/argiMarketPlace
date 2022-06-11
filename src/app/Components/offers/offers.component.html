@@ -1,4 +1,4 @@
-<div class="container current">
+<div class="containers current">
     <h1>CURRENT OFFERS</h1>
     <hr>
     <div *ngIf="currentOffer != 'undefined' || currentOffer != ''" class="row">
@@ -13,7 +13,7 @@
     </div>
     <p *ngIf="currentOffer == 'undefined' || currentOffer == ''">No current offers available. Stay tuned for exciting offers</p>
 </div>
-<div class="container previous">
+<div class="containers previous">
     <h1>PREVIOUS OFFERS</h1>
     <hr>
     <p *ngIf="previousOffer == '' || previousOffer == 'undefined'">No pervious offers available. Stay tuned for exciting offers</p>
