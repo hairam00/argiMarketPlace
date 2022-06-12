@@ -12,14 +12,14 @@ export class RestService {
 
   constructor(private http:HttpClient) { }
   // urls
-  userUrl : string = "http://localhost:3000/users";
-  newsletterUrl : string = "http://localhost:3000/newsletter";
-  whatsappUrl : string = "http://localhost:3000/whatsapp";
-  contactUrl : string = "http://localhost:3000/contacts";
-  movieUrl: string = "http://localhost:3000/products";
-  eventUrl: string = "http://localhost:3000/events";
-  bookingUrl: string = "http://localhost:3000/bookings";
-  offerUrl: string = "http://localhost:3000/offers";
+  userUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/users.json";
+  newsletterUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/newsletter.json";
+  whatsappUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/whatsapp.json";
+  contactUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/contacts.json";
+  movieUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com//products.json";
+  eventUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/events.json";
+  bookingUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/bookings.json";
+  offerUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/offers.json";
   // users sign up and login
   getUsers(){
     return this.http.get<Users[]>(this.userUrl);
@@ -27,8 +27,8 @@ export class RestService {
   createUser(user: Users){
     return this.http.post(this.userUrl, user);
   }
-  getlogin(email:string, password:string){
-    return this.http.get<any[]>(this.userUrl+"?email="+email+"&password="+password);
+  getlogin(){
+    return this.http.get<any[]>(this.userUrl);
   }
   // newsletters
   createNews(news: NewsLetter){

@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyBGcm-C7k2RueCLpJBvfDqP_T6OZYMmnMo",
+    authDomain: "agri-marketplace-6279f.firebaseapp.com",
+    databaseURL: "https://agri-marketplace-6279f-default-rtdb.firebaseio.com",
+    projectId: "agri-marketplace-6279f",
+    storageBucket: "agri-marketplace-6279f.appspot.com",
+    messagingSenderId: "79846147719",
+    appId: "1:79846147719:web:4a9d30931fb761c2589a22"
+  }
 };
 
 /*

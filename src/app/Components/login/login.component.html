@@ -2,14 +2,13 @@
     <h2 mat-dialog-title>LogIn</h2>
     <button mat-button mat-dialog-close><mat-icon>close</mat-icon></button>
 </div>
-<form class="example-form" (submit)="login()">
+<form class="example-form">
 <mat-dialog-content class="mat-typography">
     <div class="containers">
         <img src="../../../assets/logo.png" alt="logo">
         <h1>Login</h1>
         <div class="spacebar"></div>
         <br>
-        
             <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
                 <mat-label>Email</mat-label>
                 <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" [(ngModel)]="email" name="email" id="email" required>
@@ -29,7 +28,6 @@
                 </mat-form-field>
             <p>Forgot your Password???</p>
             <p>Not a member? <button mat-button class="primary" (click)="signupDialog()">Sign up now</button> </p>
-          <!-- </form> -->
         <br>
     </div>
 </mat-dialog-content>

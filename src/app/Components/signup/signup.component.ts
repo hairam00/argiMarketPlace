@@ -5,7 +5,10 @@ import { RestService } from 'src/app/Services/rest.service';
 import { LoginComponent } from '../login/login.component';
 import { Users } from 'src/app/Classes/users';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { map } from 'rxjs/operators';
+import 'rxjs/add/operator/map'
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -26,9 +29,23 @@ export class SignupComponent implements OnInit {
     number: '',
     password: '',
   };
-  constructor(public dialog: MatDialog, private restService: RestService, private _snackBar: MatSnackBar) { }
+  items: any;
+  itemsCollection: any
+  constructor(public dialog: MatDialog, private restService: RestService, private _snackBar: MatSnackBar,private afs: AngularFirestore,private http:HttpClient) { 
+    // this.itemsCollection = this.afs.collection('users').snapshotChanges().map((changes: { payload: { doc: { data: () => any; id: any; }; }; }[]) =>{
+    //   return changes.map((a: { payload: { doc: { data: () => any; id: any; }; }; }) =>{
+    //     const data = a.payload.doc.data();
+    //     data.id = a.payload.doc.id;
+    //     console.log(data);
+    //      return data;
+    //   })
+    // });
+    // console.log(this.itemsCollection);
+  }
 
   ngOnInit(): void {
+    // this.itemsCollection = this.afs.collection<any>('users');
+    // this.items = this.itemsCollection.valueChanges()
   }
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action);
@@ -63,6 +80,7 @@ export class SignupComponent implements OnInit {
     }else if(data.password == ""){
       this.openSnackBar("Please add Password", "x")
     }else{
+      console.log(data);
       this.restService.createUser(data)
         .subscribe(
           response => {
