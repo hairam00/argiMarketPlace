@@ -24,7 +24,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   openSnackBar(message: string, action: string) {
-    // this._snackBar.open(message, action);
     this._snackBar.open(message, '', {
       duration: 1000
     });

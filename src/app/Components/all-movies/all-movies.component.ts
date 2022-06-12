@@ -32,28 +32,38 @@ selected: string = ''
     }
   }
   openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
+    this._snackBar.open(message, '', {
+      duration: 1000
+    });
   }
   getMovies(){
     this.restService.getMovies().subscribe(response => {
       this.movies = response;
+      console.log(response);
     });
   }
 
   getMovieCategory(release: string){
     if(release == 'All'){
       this.getMovies();
-      this.openSnackBar("All Movies","x");
+      this.openSnackBar("All Products","x");
     }else{
-      this.restService.getMovieRelease(release).subscribe(res => {
-        this.movies = res;
-        let keys = Object.keys(this.movies).length;
-        if(keys == 0){
-          this.openSnackBar("No Upcoming Movie found ", "x");
+      this.restService.getMovies().subscribe(response => {
+        if(response.length){
+          this.movies = response.filter((product: any) => product.release == release);
+        }else{
+          this.openSnackBar("No Product found ", "x");
         }
-      }, error => {
-        console.log(error);
       });
+      // this.restService.getMovieRelease(release).subscribe(res => {
+      //   this.movies = res;
+      //   let keys = Object.keys(this.movies).length;
+      //   if(keys == 0){
+      //     this.openSnackBar("No Upcoming Movie found ", "x");
+      //   }
+      // }, error => {
+      //   console.log(error);
+      // });
     }
   }
   reload(movieId:string, movieName:string){

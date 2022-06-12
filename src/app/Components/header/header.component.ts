@@ -36,7 +36,9 @@ export class HeaderComponent implements OnInit {
   }
   //snackbar
   openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
+    this._snackBar.open(message, '', {
+      duration: 1000
+    });
   }
   signIn(){
     this.dialog.open(LoginComponent);

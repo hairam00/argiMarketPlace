@@ -18,8 +18,10 @@ selectCategory: string = '';
   constructor(private restService: RestService, private _snackBar: MatSnackBar, private title: Title) {
     this.title.setTitle('agriMarketPlace - Events')
    }
-  openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
+   openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, '', {
+      duration: 1000
+    });
   }
   ngOnInit(): void {
     window.scroll(0,0);

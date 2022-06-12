@@ -47,7 +47,9 @@ seats: number = 0;
   }
 
   openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
+    this._snackBar.open(message, '', {
+      duration: 1000
+    });
   }
   getMovieByID(id:string){
     this.rest.getMovie(id).subscribe(res => {

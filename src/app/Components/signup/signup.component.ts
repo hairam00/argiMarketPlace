@@ -48,7 +48,9 @@ export class SignupComponent implements OnInit {
     // this.items = this.itemsCollection.valueChanges()
   }
   openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
+    this._snackBar.open(message, '', {
+      duration: 1000
+    });
   }
   signIn(){
     this.dialog.closeAll();

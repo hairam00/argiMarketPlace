@@ -17,7 +17,7 @@
   </ngb-carousel>
   <!-- all movies -->
   <div class="bg">
-    <div class="container">
+    <div class="containers">
       <div *ngIf="!hideFilter">
         <h1>FILTER</h1>
       <hr>
@@ -46,7 +46,7 @@
         <hr>
         <mat-grid-list cols="4" rowHeight="2:3">
             <mat-grid-tile *ngFor="let item of movies">
-                <div class="container mat-grid-tile" [routerLink]="['/movies', item.id ,item.name]">
+                <div class="containers mat-grid-tile" [routerLink]="['/movies', item.id ,item.name]">
                     <img src="../../../assets/{{item.image}}">
                     <h3>{{item.name}}</h3>
                 </div>
