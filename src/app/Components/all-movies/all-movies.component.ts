@@ -39,7 +39,6 @@ selected: string = ''
   getMovies(){
     this.restService.getMovies().subscribe(response => {
       this.movies = response;
-      console.log(response);
     });
   }
 
@@ -55,15 +54,6 @@ selected: string = ''
           this.openSnackBar("No Product found ", "x");
         }
       });
-      // this.restService.getMovieRelease(release).subscribe(res => {
-      //   this.movies = res;
-      //   let keys = Object.keys(this.movies).length;
-      //   if(keys == 0){
-      //     this.openSnackBar("No Upcoming Movie found ", "x");
-      //   }
-      // }, error => {
-      //   console.log(error);
-      // });
     }
   }
   reload(movieId:string, movieName:string){

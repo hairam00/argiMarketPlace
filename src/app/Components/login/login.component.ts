@@ -43,13 +43,11 @@ export class LoginComponent implements OnInit {
     this.restService.getlogin().subscribe(resp =>{
       let response = Object.values(resp)
       let login:boolean = false;
-      console.log(response);
       if(response.length){
         response.forEach(element => {
           if(element.email == this.email && element.password == this.password){
             login = true
             let name = element.name;
-            console.log(name);
             this.getUsername(name);
             localStorage.setItem('username', name);
             this.openSnackBar("Login success", "x")
@@ -60,24 +58,5 @@ export class LoginComponent implements OnInit {
         this.openSnackBar("Login Failed", "x");
       }
     })
-    // this.restService.getlogin(this.email, this.password)
-    //   .subscribe(
-    //     response => {
-    //       var respSize = Object.keys(response).length;
-    //       console.warn(respSize);
-    //       if(respSize == 0){
-    //         this.openSnackBar("Login Failed", "x");
-    //       }
-    //       let resp = response[0];
-    //       let name = resp["name"];
-    //       console.log(name);
-    //       this.getUsername(name);
-    //       localStorage.setItem('username', name);
-    //       this.openSnackBar("Login success", "x")
-    //     },
-    //     error => {
-    //       this.openSnackBar("Login Failed", "x");
-    //       console.error(error);
-    //     });
   }
 }
