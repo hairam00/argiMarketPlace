@@ -17,8 +17,18 @@ export class TrackingCodeComponent implements OnInit {
     this.getBookings();
   }
   getBookings(){
+    let products:any[] = [];
     this.rest.getBookings().subscribe(response =>{
-      this.bookData = response;
+      this.bookData = Object.values(response);
+      // this.bookData.forEach(element => {
+      //   this.rest.getMovies().subscribe(movies => {
+      //     products = Object.values(movies)
+      //     if(products.length){
+      //       products.filter(product => product.ticket_id == element.ticket_id )
+      //     }
+      //   })
+      // });
+      console.log(this.bookData);
       for(let i=0; i < response.length; i++){
         if(response[i]["booking_type"] == 'movies'){
           this.getMovieById(response[i]["ticket_id"]);

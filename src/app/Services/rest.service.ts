@@ -11,16 +11,27 @@ import { Whatsapp } from '../Classes/whatsapp';
 export class RestService {
 
   constructor(private http:HttpClient) { }
-  // urls
-  userUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/users.json";
-  newsletterUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/newsletter.json";
-  whatsappUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/whatsapp.json";
-  contactUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/contacts.json";
-  movieUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com//products.json";
-  eventUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/events.json";
-  bookingUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/bookings.json";
-  offerUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/offers.json";
+  // FireBase urls
+  // userUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/users.json";
+  // newsletterUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/newsletter.json";
+  // whatsappUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/whatsapp.json";
+  // contactUrl : string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/contacts.json";
+  // movieUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com//products.json";
+  // eventUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/events.json";
+  // bookingUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/bookings.json";
+  // offerUrl: string = "https://agri-marketplace-6279f-default-rtdb.firebaseio.com/offers.json";
+  
   // users sign up and login
+  // jsonServer URLS
+  userUrl : string = "http://localhost:3000/users";
+  newsletterUrl : string = "http://localhost:3000/newsletter";
+  whatsappUrl : string = "http://localhost:3000/whatsapp";
+  contactUrl : string = "http://localhost:3000/contacts";
+  movieUrl: string = "http://localhost:3000/products";
+  eventUrl: string = "http://localhost:3000/events";
+  bookingUrl: string = "http://localhost:3000/bookings";
+  offerUrl: string = "http://localhost:3000/offers";
+
   getUsers(){
     return this.http.get<Users[]>(this.userUrl);
   }

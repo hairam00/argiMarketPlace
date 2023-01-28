@@ -5,9 +5,6 @@ import { RestService } from 'src/app/Services/rest.service';
 import { LoginComponent } from '../login/login.component';
 import { Users } from 'src/app/Classes/users';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
-import { map } from 'rxjs/operators';
-import 'rxjs/add/operator/map'
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-signup',
@@ -31,16 +28,7 @@ export class SignupComponent implements OnInit {
   };
   items: any;
   itemsCollection: any
-  constructor(public dialog: MatDialog, private restService: RestService, private _snackBar: MatSnackBar,private afs: AngularFirestore,private http:HttpClient) { 
-    // this.itemsCollection = this.afs.collection('users').snapshotChanges().map((changes: { payload: { doc: { data: () => any; id: any; }; }; }[]) =>{
-    //   return changes.map((a: { payload: { doc: { data: () => any; id: any; }; }; }) =>{
-    //     const data = a.payload.doc.data();
-    //     data.id = a.payload.doc.id;
-    //     console.log(data);
-    //      return data;
-    //   })
-    // });
-    // console.log(this.itemsCollection);
+  constructor(public dialog: MatDialog, private restService: RestService, private _snackBar: MatSnackBar,private http:HttpClient) { 
   }
 
   ngOnInit(): void {
